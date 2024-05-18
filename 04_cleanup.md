@@ -2,6 +2,20 @@
 
 最後に、各種AWSリソースを削除して後片付けをしましょう。
 
+## [オプション] Amplifyアプリの削除
+
+今回作成したAmplifyホスティングのアプリを削除します
+
+1. AWSマネジメントコンソールで上部のアイコンにある「CloudShell」をクリックします
+2. 以下のコマンドを実行します
+    - アプリIDはAmplifyの画面上に記載されています
+
+```bash
+aws amplify delete-app --app-id <アプリID>
+```
+
+![Amplifyホスティング削除](./images/cleanup/amplify_delete-app.png "Amplifyホスティング削除")
+
 ## [オプション] DynamoDBテーブルの削除
 
 今回作成したDynamoDBテーブル「ChatMessageHistory」を削除します
